@@ -1,4 +1,4 @@
-package org.example.springbootreactiveplayground.comparision01;
+package org.example.springbootreactiveplayground.Ex01Comparison;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.MediaType;

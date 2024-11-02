@@ -1,4 +1,4 @@
-package org.example.springbootreactiveplayground.comparision01;
+package org.example.springbootreactiveplayground.Ex01Comparison;
 
 public record Product(Integer id,
                       String description,

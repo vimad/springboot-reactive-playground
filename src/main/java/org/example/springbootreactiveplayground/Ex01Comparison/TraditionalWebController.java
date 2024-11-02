@@ -1,4 +1,4 @@
-package org.example.springbootreactiveplayground.comparision01;
+package org.example.springbootreactiveplayground.Ex01Comparison;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.core.ParameterizedTypeReference;
@@ -24,8 +24,7 @@ public class TraditionalWebController {
         List<Product> list = restClient.get()
             .uri("/demo01/products")
             .retrieve()
-            .body(new ParameterizedTypeReference<List<Product>>() {
-            });
+            .body(new ParameterizedTypeReference<>() {});
         log.info("received response {}", list);
         return list;
     }
@@ -35,8 +34,7 @@ public class TraditionalWebController {
         List<Product> list = restClient.get()
             .uri("/demo01/products/notorious")
             .retrieve()
-            .body(new ParameterizedTypeReference<List<Product>>() {
-            });
+            .body(new ParameterizedTypeReference<>() {});
         log.info("received response {}", list);
         return list;
     }
