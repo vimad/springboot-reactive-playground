@@ -1,0 +1,2 @@
+curl localhost:8080/traditional/products
+curl -N localhost:8080/reactive/products
